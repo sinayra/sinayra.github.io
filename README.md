@@ -1,2 +1,2 @@
-# sinayra.github.io
- Projetinhos web for fun
+# Projetinhos web
+ - Gerador de elogios

@@ -7,10 +7,14 @@ function loadFile(filePath) {
       result = xmlhttp.responseText;
     }
     return result;
-  }
+}
 
 function gerarElogio(){
-    let output = loadFile('./elogios.txt');
+    let msg = document.getElementById("elogio");
+    
+    let conteudo = loadFile("./elogios.txt");
+    let elogios = conteudo.split("\n");
+    let elogio = elogios[Math.floor(Math.random() * elogios.length)];
 
-    console.log(output);
+    msg.innerHTML = elogio;
 }
